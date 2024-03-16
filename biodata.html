@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+            Tugas Pemrograman Web / Dimas Adista Perdana 2202274
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Formulir</title>
+    <style>
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih</title>
+    <style>
+        h1.center {
+            text-align: center;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih</title>
+    <style>
+        body {
+            background-color: #222; 
+            color: white; 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1.center {
+            text-align: center;
+        }
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+        }
+        #isi {
+            display: inline-block;
+            text-align: left;
+        }
+        table {
+            margin: 0 auto;
+        }
+        .center-button {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Biodata</h1>
+    <div id="hasil_formulir">
+        <p>Nama: <span id="nama_result"></span></p>
+        <p>NIK: <span id="nik_result"></span></p>
+        <p>Jenis Kelamin: <span id="jenis_kelamin_result"></span></p>
+        <p>Alamat: <span id="alamat_result"></span></p>
+        <p>Email: <span id="email_result"></span></p>
+        <p>Tempat, Tanggal Lahir: <span id="ttl_result"></span></p>
+        <p>Pendidikan Terakhir: <span id="pendidikan_result"></span></p>
+    </div>
+    
+    <script>
+        // Ambil nilai dari URL Sebelumnya
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Hasil Inputan
+        document.getElementById("nama_result").innerText = urlParams.get('nama') || '';
+        document.getElementById("nik_result").innerText = urlParams.get('nik') || '';
+        document.getElementById("jenis_kelamin_result").innerText = urlParams.get('jenis_kelamin') || '';
+        document.getElementById("alamat_result").innerText = urlParams.get('alamat') || '';
+        document.getElementById("email_result").innerText = urlParams.get('email') || '';
+        document.getElementById("ttl_result").innerText = urlParams.get('TTL') || '';
+        document.getElementById("pendidikan_result").innerText = urlParams.get('Pendidikan') || '';
+    </script>
+
+    <img src="hell yeah.gif" alt="Terimakasih" class="center" style="display: block; margin: 0 auto; margin-top: 20px;">
+
+    <div id="selesai">
+        <form action="Ehe.html" method="get">
+        <table border="0">
+            <tr>
+                <td colspan="3" class="center-button" style="padding-top: 20px;">
+                    <button type="submit">Sudah Selesai?</button>    
+                    </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>

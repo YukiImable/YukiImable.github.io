@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Tugas Pemrograman Web / Dimas Adista Perdana 2202274
+    </title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #222;
+            color: white; 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #isi {
+            display: inline-block;
+            text-align: left;
+        }
+        table {
+            margin: 0 auto;
+        }
+        .center-button {
+            text-align: center;
+        }
+        input, select, button {
+            background-color: #333; 
+            color: white; 
+            border: none;
+            padding: 8px;
+            margin: 4px;
+            border-radius: 4px;
+        }
+        .center-button {
+            text-align: center;
+        }
+        #Judul_Halaman {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #Judul_Halaman h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="isi">
+        <div id="Judul_Halaman">
+            <h1>
+                Silahkan Isi Biodata di Bawah
+            </h1>
+        </div>
+        <div id="form biodata">
+            <form action="biodata.html">
+            <table border="0">
+                <tr>
+                    <div id="nama_lengkap">
+                        <td><label>Nama Lengkap</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" id="nama" placeholder="Dimas Adista Perdana"></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div id="NIK">
+                        <td><label>NIK </label></td>
+                        <td>:</td>
+                        <td><input type="text" name="nik" id="nik" placeholder="2202274"></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div id="jenis_kelamin"></div>
+                    <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="jenis_kelamin" id="jenis_kelamin">
+                            <option value="Male">Pria</option>
+                            <option value="Female">Wanita</option>
+                            <option value="prefer_not_say">Tidak Ingin Memberitahu</option>
+                            <option value="undefined">Tidak Teridentifikasi</option>
+                        </select>
+                    </td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div id="alamat"></div>
+                    <td><label>Alamat</label></td>
+                    <td>:</td>
+                    <td><input type="alamat" name="alamat" id="alamat" placeholder="Jln. ...., Bekasi, Jawa Barat."></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div id="email"></div>
+                    <td><label>Email</label></td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email" placeholder="dimas.adista69@upi.edu"></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div id="TTL"></div>
+                    <td><label>Tempat, Tanggal Lahir</label></td>
+                    <td>:</td>
+                    <td><input type="TTL" name="TTL" id="TTL" placeholder="Bekasi, 14 September"></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div id="Pendidikan"></div>
+                    <td><label for="Pendidikan">Pendidikan Terakhir</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="Pendidikan" id="Pendidikan">
+                            <option value="SD">SD</option>
+                            <option value="SMP">SMP</option>
+                            <option value="SMA/SMK">SMA/SMK</option>
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="D3">D3</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="center-button" style="padding-top: 20px;">
+                    <button type="submit">Submit</button>    
+                    </td>
+                </tr>
+            </table>
+
+            <img src="toothless-dancing-toothless.gif" alt="Terimakasih" class="center" style="display: block; margin: 0 auto; margin-top: 20px;">
+        </div>
+    </div>
+</body>
+</html>
